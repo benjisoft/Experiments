@@ -6,10 +6,10 @@
 	<title>Experiments | User Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="lib/css/home.css" />
-	<script src="lib/js/fb.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
-	<script src="lib/js/click.js"></script>
 	<script src="https://browser.sentry-cdn.com/4.2.1/bundle.min.js" crossorigin="anonymous"></script>
+	<script src="lib/js/fb.js"></script>
+	<script src="lib/js/click.js"></script>
 </head>
 <body>
 	<script>Sentry.init({ dsn: 'https://ef8b82d091af4eb0a1939895e7d60c67@sentry.io/1307432' });</script>
@@ -18,5 +18,25 @@
 	<span id="clickCount"></span>
 	<br />
 	<button id="submit" onclick="submitClicks()">Submit Score</button>
+	<div id="scoreboard">
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Score</th>
+			</tr>
+			<tr>
+				<td id="scoreName_1"></td>
+				<td id="score_1"></td>
+			</tr>
+			<tr>
+				<td id="scoreName_2"></td>
+				<td id="score_2"></td>
+			</tr>
+			<tr>
+				<td id="scoreName_3"></td>
+				<td id="score_3"></td>
+			</tr>
+		</table>
+	</div>
 </body>
 </html>
