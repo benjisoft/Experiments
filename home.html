@@ -9,11 +9,26 @@
 	<script src="lib/js/fb.js"></script>
 	<script src="lib/js/click.js"></script>
 	<script src="https://browser.sentry-cdn.com/4.2.1/bundle.min.js" crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+	<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyD4SBHplPiwHQ12UxFdxeLyn3uGhy5lN7I",
+		authDomain: "experiments-8a805.firebaseapp.com",
+		databaseURL: "https://experiments-8a805.firebaseio.com",
+		projectId: "experiments-8a805",
+		storageBucket: "experiments-8a805.appspot.com",
+		messagingSenderId: "764927710135"
+	};
+	firebase.initializeApp(config);
+	</script>
 </head>
 <body>
 	<script>Sentry.init({ dsn: 'https://ef8b82d091af4eb0a1939895e7d60c67@sentry.io/1307432' });</script>
 	<div id="status"></div>
 	<button id="clicker" onclick="addClick()">Click Me</button>
 	<span id="clickCount"></span>
+	<br />
+	<button id="submit" onclick="submitClicks()">Submit Score</button>
 </body>
 </html>
