@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Experiments | FB Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="lib/css/fb.css" />
+	<script src="lib/js/fb.js"></script>
+	<script src="https://browser.sentry-cdn.com/4.2.1/bundle.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<script>Sentry.init({ dsn: 'https://ef8b82d091af4eb0a1939895e7d60c67@sentry.io/1307432' });</script>
+	<h1>Login With Facebook</h1>
+	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+	</fb:login-button>
+</body>
+
+</html>
